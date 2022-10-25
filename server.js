@@ -32,19 +32,12 @@ app.use(express.urlencoded({ extended: true}));
 const router=require('./router/router')
 
 router(app);
-if(process.env.NOde_ENV==="production"){
 
-  //app.use(express.static(path.join(__dirname, '../public')));
-  app.use(express.static("client/build"))
- // app.use(express.static(path.join(__dirname, 'client', 'build')));
-
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'))
-  });
-}
 
 server.listen(port,()=>console.log(`server started.... ${port}`))
 
+
+module.exports = app;
 /**
   this help to solve mongodb error whe trying to connect
     from Control Panel -> Administration -> Services -> MongoDB
