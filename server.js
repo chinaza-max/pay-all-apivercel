@@ -17,7 +17,7 @@ var corsOptions = {
 }
 app.use(cors(corsOptions))
 app.use('/', function (req, res, next) {
-  res.setHeader("Access-Control-Allow-Origin","http://localhost:3000")
+  res.setHeader("Access-Control-Allow-Origin","http://localhost")
     res.setHeader("Access-Control-Allow-Credentials", "true");
     res.setHeader("Access-Control-Max-Age", "1800");
     res.setHeader("Access-Control-Allow-Headers", "content-type");
