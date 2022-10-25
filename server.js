@@ -36,8 +36,6 @@ router(app);
 
 server.listen(port,()=>console.log(`server started.... ${port}`))
 
-
-module.exports = app;
 /**
   this help to solve mongodb error whe trying to connect
     from Control Panel -> Administration -> Services -> MongoDB
