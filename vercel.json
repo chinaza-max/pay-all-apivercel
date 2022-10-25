@@ -3,7 +3,7 @@
    "version": 2,
    "name": "music-album",
 
-   "rewrites": [{ "source": "/(.*)", "destination": "/api" }]
+   "rewrites": [{ "source": "/(.*)", "destination": "/" }]
     
     
 }
