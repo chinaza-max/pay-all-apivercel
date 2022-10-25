@@ -1,11 +1,11 @@
 
 {
    "version": 2,
-   "name": "pay-all",
+   "name": "music-album",
    "builds": [
-      { "src": "server.js", "use": "@vercel/node" }
+      { "src": "package.json", "use": "@vercel/node" }
    ],
    "routes": [
-      { "src": "/(.*)", "dest": "/" }
+      { "src": "/(.*)", "dest": "server.js" }
    ]
 }
